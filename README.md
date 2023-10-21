@@ -25,3 +25,5 @@ php artisan livewire:layout
 composer require laravel/breeze --dev
 php artisan breeze:install
 
+<!-- migrate -->
+php artisan migrate
