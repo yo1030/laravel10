@@ -30,7 +30,7 @@ services:
       MYSQL_USER: mysql_use
       MYSQL_PASSWORD: password
       TZ: 'Asia/Tokyo' 
-    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --secure-file-priv=""
     volumes:  
       - ./docker/db/data:/var/lib/mysql
       - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf

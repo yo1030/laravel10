@@ -1,7 +1,7 @@
 # laravel10
 
 <!-- 初回コンテナ起動後 laravel プロジェクト作成 -->
-composer create-project "laravel/laravel=10.*" laravel10
+composer create-project "laravel/laravel=10.10" laravel10
 
 <!-- envファイル修正 -->
 DB_CONNECTION=mysql
@@ -27,3 +27,7 @@ php artisan breeze:install
 
 <!-- migrate -->
 php artisan migrate
+
+<!-- mysql の権限変更 -->
+chmod 777 /var/lib
+chmod 777 /var/lib/mysql
