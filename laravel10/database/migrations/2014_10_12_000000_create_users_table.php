@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    // テーブルのカラム情報を記載する
     /**
      * Run the migrations.
      */
@@ -16,6 +17,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->integer('type');
+            $table->integer('age');
+            $table->integer('sex');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
