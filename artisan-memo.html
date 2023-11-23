@@ -1,0 +1,47 @@
+<!-- make model -->
+<!-- https://readouble.com/laravel/10.x/ja/eloquent.html -->
+php artisan make:model Flight --migration
+
+<!-- # モデルとFlightFactoryクラスを生成 -->
+php artisan make:model Flight --factory
+php artisan make:model Flight -f
+
+<!-- # モデルとFlightSeederクラスを生成 -->
+php artisan make:model Flight --seed
+php artisan make:model Flight -s
+
+<!-- # モデルとFlightControllerクラスを生成 -->
+php artisan make:model Flight --controller
+php artisan make:model Flight -c
+
+<!-- # モデルとFlightControllerリソースクラス、フォームリクエストクラスを生成 -->
+php artisan make:model Flight --controller --resource --requests
+php artisan make:model Flight -crR
+
+<!-- # モデルとFlightPolicyクラスを生成 -->
+php artisan make:model Flight --policy
+
+<!-- # モデルとマイグレーション、ファクトリ、シーダ、およびコントローラを生成 -->
+php artisan make:model Flight -mfsc
+
+<!-- # モデルとマイグレーション、ファクトリ、シーダ、ポリシー、コントローラ、フォームリクエストを生成する短縮形 -->
+php artisan make:model Flight --all
+
+<!-- # ピボットモデルを生成 -->
+php artisan make:model Member --pivot
+php artisan make:model Member -p
+
+<!-- Model の調査 -->
+php artisan model:show Flight
+
+<!-- Policy -->
+<!-- https://readouble.com/laravel/10.x/ja/authorization.html -->
+php artisan make:policy PostPolicy
+php artisan make:policy PostPolicy --model=Post
+
+<!-- Seed -->
+php artisan make:seeder PrefSeeder
+php artisan db:seed
+
+<!-- Migrate -->
+php artisan migrate:status
