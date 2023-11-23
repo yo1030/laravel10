@@ -5,6 +5,10 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Salary;
+use App\Models\OpenCourse;
+use Database\Seeders\CourseMasterSeeder;
+use Database\Seeders\PrefSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,6 +19,12 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory(100)->create();
+        Salary::factory(100)->create();
+        OpenCourse::factory(20)->create();
+        $this->call([
+            CourseMasterSeeder::class,
+            PrefSeeder::class
+        ]);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
