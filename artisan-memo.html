@@ -45,3 +45,24 @@ php artisan db:seed
 
 <!-- Migrate -->
 php artisan migrate:status
+
+php artisan migrate:rollback
+php artisan migrate
+php artisan db:seed --class=MeetingSeeder
+php artisan db:seed --class=ClassA2sSeeder
+php artisan db:seed --class=ClassBsSeeder
+php artisan db:seed --class=ClassB2sSeeder
+
+php artisan make:model Meeting -mfs
+php artisan make:model TestScore -mfs
+php artisan make:model Project -mfs
+php artisan make:model ArrayTbl -mfs
+php artisan make:model ArrayTbl2 -mfs
+php artisan make:model Number -mfs
+php artisan make:model SeqTbl -mfs
+
+php artisan db:seed --class=TestScoreSeeder
+php artisan db:seed --class=ProjectSeeder
+php artisan db:seed --class=ArrayTblSeeder
+php artisan db:seed --class=ArrayTbl2Seeder
+

@@ -3,12 +3,16 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Meeting;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Salary;
 use App\Models\OpenCourse;
 use Database\Seeders\CourseMasterSeeder;
 use Database\Seeders\PrefSeeder;
+use Database\Seeders\ProductsSeeder;
+use Database\Seeders\MeetingSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,7 +27,9 @@ class DatabaseSeeder extends Seeder
         OpenCourse::factory(20)->create();
         $this->call([
             CourseMasterSeeder::class,
-            PrefSeeder::class
+            PrefSeeder::class,
+            ProductsSeeder::class,
+            MeetingSeeder::class
         ]);
 
         // \App\Models\User::factory()->create([

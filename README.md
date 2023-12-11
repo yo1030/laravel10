@@ -31,3 +31,7 @@ php artisan migrate
 <!-- mysql の権限変更 -->
 chmod 777 /var/lib
 chmod 777 /var/lib/mysql
+
+<!-- mysql への接続 -->
+mysql -h 127.0.0.1 laravel10 -u mysql_use -p -P 33067
+
