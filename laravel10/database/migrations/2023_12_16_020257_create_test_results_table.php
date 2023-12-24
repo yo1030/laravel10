@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('seq_tbls', function (Blueprint $table) {
+        Schema::create('test_results', function (Blueprint $table) {
             $table->id();
-            $table->integer('seq');
-            $table->string('name');
+            $table->string('student_id');
+            $table->char('class', 1);
+            $table->enum('sex', ['男', '女']); // '男' は男性, '女' は女性を表します。
+            $table->unsignedInteger('score');
             $table->timestamps();
         });
     }
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('seq_tbls');
+        Schema::dropIfExists('test_results');
     }
 };

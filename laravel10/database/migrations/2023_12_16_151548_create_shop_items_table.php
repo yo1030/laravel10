@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('seq_tbls', function (Blueprint $table) {
+        Schema::create('shop_items', function (Blueprint $table) {
             $table->id();
-            $table->integer('seq');
-            $table->string('name');
+            $table->string('shop');
+            $table->string('item');
+            // $table->foreignId('shop_id')->constrained()->onDelete('cascade');
+            // $table->foreignId('item_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('seq_tbls');
+        Schema::dropIfExists('shop_items');
     }
 };

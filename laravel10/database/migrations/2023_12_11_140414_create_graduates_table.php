@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('seq_tbls', function (Blueprint $table) {
+        Schema::create('graduates', function (Blueprint $table) {
             $table->id();
-            $table->integer('seq');
             $table->string('name');
+            $table->integer('income');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('seq_tbls');
+        Schema::dropIfExists('graduates');
     }
 };

@@ -5,11 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SeqTbl extends Model
+class Graduate extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'name',
-        'seq',
-    ];
 }

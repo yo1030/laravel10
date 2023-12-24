@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\SeqTbl>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\NullTbl>
  */
-class SeqTblFactory extends Factory
+class NullTblFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,7 @@ class SeqTblFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->fake()->name(),
+            'col_1' => null, // またはfakerを使って適当なデータを生成
         ];
     }
 }

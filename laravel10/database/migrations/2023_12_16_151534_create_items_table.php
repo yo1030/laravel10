@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('seq_tbls', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->integer('seq');
-            $table->string('name');
+            $table->string('name'); // 画像から仮定したフィールド
             $table->timestamps();
         });
     }
@@ -24,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('seq_tbls');
+        Schema::dropIfExists('items');
     }
 };

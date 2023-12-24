@@ -60,9 +60,37 @@ php artisan make:model ArrayTbl -mfs
 php artisan make:model ArrayTbl2 -mfs
 php artisan make:model Number -mfs
 php artisan make:model SeqTbl -mfs
+php artisan make:model SeqTbl1 -mfs
+php artisan make:model SeqTbl2 -mfs
+php artisan make:model SeqTbl3 -mfs
+php artisan make:model SeqTbl4 -mfs
+php artisan make:model SeqTbl5 -mfs
+php artisan make:model Graduate -mfs
+php artisan make:model NullTbl -mfs
+php artisan make:model TestResult -mfs
+php artisan make:seeder StudentSeeder
+php artisan make:factory StudentFactory
+php artisan make:model Team -mfs
+php artisan make:model Material -mfs
+php artisan make:model Item -mfs
+php artisan make:model Shop -mfs
+php artisan make:model ShopItem -mfs
+php artisan make:model Sale -mfs
 
 php artisan db:seed --class=TestScoreSeeder
 php artisan db:seed --class=ProjectSeeder
 php artisan db:seed --class=ArrayTblSeeder
 php artisan db:seed --class=ArrayTbl2Seeder
-
+php artisan db:seed --class=SeqTblSeeder
+php artisan db:seed --class=GraduateSeeder
+php artisan db:seed --class=StudentSeeder
+php artisan db:seed --class=TestResultSeeder
+php artisan db:seed --class=TeamSeeder
+php artisan db:seed --class=MaterialSeeder
+php artisan db:seed --class=ItemSeeder
+php artisan db:seed --class=ShopSeeder
+php artisan db:seed --class=ShopItemSeeder
+php artisan db:seed --class=SeqTbl1Seeder
+php artisan db:seed --class=SeqTbl2Seeder
+php artisan db:seed --class=SeqTbl3Seeder
+php artisan db:seed --class=SeqTbl4Seeder

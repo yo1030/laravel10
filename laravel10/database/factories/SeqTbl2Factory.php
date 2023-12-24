@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\SeqTbl>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\SeqTbl2>
  */
-class SeqTblFactory extends Factory
+class SeqTbl2Factory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,8 @@ class SeqTblFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->fake()->name(),
+            'name' => fake()->name(),
+            'seq' => fake()->unique()->randomElement([1,2,8,4,5])
         ];
     }
 }
