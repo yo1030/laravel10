@@ -14,7 +14,7 @@ class StudentSeeder extends Seeder
      */
     public function run(): void
     {
-        // Student::truncate();
+        Student::truncate();
 
         $dataList = [
             '2018-10-10',
