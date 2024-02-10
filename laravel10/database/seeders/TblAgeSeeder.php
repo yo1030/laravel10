@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\TblAge;
+use Illuminate\Database\Eloquent\Factories\Sequence;
 
 class TblAgeSeeder extends Seeder
 {
@@ -13,6 +14,12 @@ class TblAgeSeeder extends Seeder
      */
     public function run(): void
     {
-        TblAge::factory(3)->create();
+        TblAge::factory(3)
+        ->sequence(
+            fn (Sequence $sequence) => 
+            [
+                'age_class' => $sequence->index + 1
+            ]
+        )->create();
     }
 }

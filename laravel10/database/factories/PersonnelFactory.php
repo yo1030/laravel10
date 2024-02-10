@@ -18,7 +18,7 @@ class PersonnelFactory extends Factory
     {
         return [
             'employee' => fake()->unique()->randomElement([
-                '赤井', '工藤', '松本', '高田']),
+                '赤井', '工藤', '松本', '高田', '鈴木']),
             'child_1' => fake()->randomElement(['一郎', '春子', '夏子', null]),
             'child_2' => fake()->randomElement(['夏子', '二郎', null]),
             'child_3' => fake()->randomElement(['三郎', null]),

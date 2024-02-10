@@ -18,7 +18,7 @@ class SeqTbl2Factory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'seq' => fake()->unique()->randomElement([1,2,8,4,5])
+            'seq' => fake()->unique()->numberBetween(1,100)
         ];
     }
 }

@@ -17,7 +17,7 @@ class TblA1Factory extends Factory
     public function definition(): array
     {
         return [
-            'key' => fake()->unique()->randomElement(['A', 'B', 'C']),
+            'key' => fake()->unique()->randomElement(['A', 'B', 'C', 'D', 'E', 'F', 'G','H', 'I', 'J']),
             'col_1' => fake()->numberBetween(0, 10),
             'col_2' => fake()->numberBetween(0, 10),
             'col_3' => fake()->numberBetween(0, 10),

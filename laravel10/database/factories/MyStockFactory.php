@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\TblAge>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\MyStock>
  */
-class TblAgeFactory extends Factory
+class MyStockFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,8 @@ class TblAgeFactory extends Factory
     public function definition(): array
     {
         return [
-            'age_class' => fake()->unique()->numberBetween(1, 50),
-            'age_range' => fake()->randomElement(['21~30', '31~40', '41~50']),
+            'deal_date' => fake()->date(),
+            'price' => fake()->numberBetween(850, 3000)
         ];
     }
 }

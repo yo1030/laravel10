@@ -2,18 +2,18 @@
 
 namespace Database\Seeders;
 
+use App\Models\Digit;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Sale;
 
-class SaleSeeder extends Seeder
+class DigitSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Sale::truncate();
-        Sale::factory(20)->create();
+        // You can call the factory here to create dummy data
+        Digit::factory(10)->create();
     }
 }
