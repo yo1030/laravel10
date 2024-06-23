@@ -98,9 +98,13 @@ php artisan make:model TblB1 -mfs
 php artisan make:model Skill -mfs
 php artisan make:model EmpSkill -mfs
 php artisan make:model Digit -mfs
+php artisan make:model SeqTable -mfs
+php artisan make:model Seat -mfs
+php artisan make:model Seat2 -mfs
+php artisan make:model MyStock -mfs
 
-php artisan db:seed --class=TestScoreSeeder
 php artisan db:seed --class=ProjectSeeder
+php artisan db:seed --class=TestScoreSeeder
 php artisan db:seed --class=ArrayTblSeeder
 php artisan db:seed --class=ArrayTbl2Seeder
 php artisan db:seed --class=SeqTblSeeder
@@ -138,4 +142,9 @@ php artisan db:seed --class=TblA1Seeder
 php artisan db:seed --class=TblB1Seeder
 php artisan db:seed --class=SkillSeeder
 php artisan db:seed --class=EmpSkillSeeder
+php artisan db:seed --class=DigitSeeder
+php artisan db:seed --class=SeqTableSeeder
+php artisan db:seed --class=SeatSeeder
+php artisan db:seed --class=Seat2Seeder
+php artisan db:seed --class=MyStockSeeder
 
