@@ -1,0 +1,150 @@
+<!-- make model -->
+<!-- https://readouble.com/laravel/10.x/ja/eloquent.html -->
+php artisan make:model Flight --migration
+
+<!-- # モデルとFlightFactoryクラスを生成 -->
+php artisan make:model Flight --factory
+php artisan make:model Flight -f
+
+<!-- # モデルとFlightSeederクラスを生成 -->
+php artisan make:model Flight --seed
+php artisan make:model Flight -s
+
+<!-- # モデルとFlightControllerクラスを生成 -->
+php artisan make:model Flight --controller
+php artisan make:model Flight -c
+
+<!-- # モデルとFlightControllerリソースクラス、フォームリクエストクラスを生成 -->
+php artisan make:model Flight --controller --resource --requests
+php artisan make:model Flight -crR
+
+<!-- # モデルとFlightPolicyクラスを生成 -->
+php artisan make:model Flight --policy
+
+<!-- # モデルとマイグレーション、ファクトリ、シーダ、およびコントローラを生成 -->
+php artisan make:model Flight -mfsc
+
+<!-- # モデルとマイグレーション、ファクトリ、シーダ、ポリシー、コントローラ、フォームリクエストを生成する短縮形 -->
+php artisan make:model Flight --all
+
+<!-- # ピボットモデルを生成 -->
+php artisan make:model Member --pivot
+php artisan make:model Member -p
+
+<!-- Model の調査 -->
+php artisan model:show Flight
+
+<!-- Policy -->
+<!-- https://readouble.com/laravel/10.x/ja/authorization.html -->
+php artisan make:policy PostPolicy
+php artisan make:policy PostPolicy --model=Post
+
+<!-- Seed -->
+php artisan make:seeder PrefSeeder
+php artisan db:seed
+
+<!-- Migrate -->
+php artisan migrate:status
+
+php artisan migrate:rollback
+php artisan migrate
+php artisan db:seed --class=MeetingSeeder
+php artisan db:seed --class=ClassA2sSeeder
+php artisan db:seed --class=ClassBsSeeder
+php artisan db:seed --class=ClassB2sSeeder
+
+php artisan make:model Meeting -mfs
+php artisan make:model TestScore -mfs
+php artisan make:model Project -mfs
+php artisan make:model ArrayTbl -mfs
+php artisan make:model ArrayTbl2 -mfs
+php artisan make:model Number -mfs
+php artisan make:model SeqTbl -mfs
+php artisan make:model SeqTbl1 -mfs
+php artisan make:model SeqTbl2 -mfs
+php artisan make:model SeqTbl3 -mfs
+php artisan make:model SeqTbl4 -mfs
+php artisan make:model SeqTbl5 -mfs
+php artisan make:model Graduate -mfs
+php artisan make:model NullTbl -mfs
+php artisan make:model TestResult -mfs
+php artisan make:seeder StudentSeeder
+php artisan make:factory StudentFactory
+php artisan make:model Team -mfs
+php artisan make:model Material -mfs
+php artisan make:model Item -mfs
+php artisan make:model Shop -mfs
+php artisan make:model ShopItem -mfs
+php artisan make:model Sale -mfs
+php artisan make:model Sale2 -mfs
+php artisan make:model Shohin -mfs
+php artisan make:model Reservation -mfs
+php artisan make:model Account -mfs
+php artisan make:model Course -mfs
+php artisan make:model Personnel -mfs
+php artisan make:model TblAge -mfs
+php artisan make:model TblSex -mfs
+php artisan make:model TblPop -mfs
+php artisan make:model SupPart -mfs
+php artisan make:model Master -mfs
+php artisan make:model SaleItem -mfs
+php artisan make:model SaleHistory -mfs
+php artisan make:model Class_A -mfs
+php artisan make:model Class_B -mfs
+php artisan make:model TblA -mfs
+php artisan make:model TblB -mfs
+php artisan make:model TblA1 -mfs
+php artisan make:model TblB1 -mfs
+php artisan make:model Skill -mfs
+php artisan make:model EmpSkill -mfs
+php artisan make:model Digit -mfs
+php artisan make:model SeqTable -mfs
+php artisan make:model Seat -mfs
+php artisan make:model Seat2 -mfs
+php artisan make:model MyStock -mfs
+
+php artisan db:seed --class=ProjectSeeder
+php artisan db:seed --class=TestScoreSeeder
+php artisan db:seed --class=ArrayTblSeeder
+php artisan db:seed --class=ArrayTbl2Seeder
+php artisan db:seed --class=SeqTblSeeder
+php artisan db:seed --class=GraduateSeeder
+php artisan db:seed --class=StudentSeeder
+php artisan db:seed --class=TestResultSeeder
+php artisan db:seed --class=TeamSeeder
+php artisan db:seed --class=MaterialSeeder
+php artisan db:seed --class=ItemSeeder
+php artisan db:seed --class=ShopSeeder
+php artisan db:seed --class=ShopItemSeeder
+php artisan db:seed --class=SeqTbl1Seeder
+php artisan db:seed --class=SeqTbl2Seeder
+php artisan db:seed --class=SeqTbl3Seeder
+php artisan db:seed --class=SeqTbl4Seeder
+php artisan db:seed --class=SaleSeeder
+php artisan db:seed --class=Sale2Seeder
+php artisan db:seed --class=ShohinSeeder
+php artisan db:seed --class=ReservationSeeder
+php artisan db:seed --class=AccountSeeder
+php artisan db:seed --class=CourseSeeder
+php artisan db:seed --class=PersonnelSeeder
+php artisan db:seed --class=TblAgeSeeder
+php artisan db:seed --class=TblSexSeeder
+php artisan db:seed --class=TblPopSeeder
+php artisan db:seed --class=SupPartSeeder
+php artisan db:seed --class=MasterSeeder
+php artisan db:seed --class=SaleItemSeeder
+php artisan db:seed --class=SaleHistorySeeder
+php artisan db:seed --class=ClassASeeder
+php artisan db:seed --class=ClassBSeeder
+php artisan db:seed --class=TblASeeder
+php artisan db:seed --class=TblBSeeder
+php artisan db:seed --class=TblA1Seeder
+php artisan db:seed --class=TblB1Seeder
+php artisan db:seed --class=SkillSeeder
+php artisan db:seed --class=EmpSkillSeeder
+php artisan db:seed --class=DigitSeeder
+php artisan db:seed --class=SeqTableSeeder
+php artisan db:seed --class=SeatSeeder
+php artisan db:seed --class=Seat2Seeder
+php artisan db:seed --class=MyStockSeeder
+
